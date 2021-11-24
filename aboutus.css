@@ -1,0 +1,101 @@
+@import url(https://weloveiconfonts.com/api/?family=entypo);
+#wrapper{
+	width: 350px;
+	height: 50px;
+	margin: 50px;
+}
+
+.box{
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	font-family: entypo;
+	color: #212121;
+	background: #fff;
+	text-align: center;
+	line-height: 50px;
+	font-family: 25px;
+	display: block;
+	cursor: pointer;
+	margin: 10px;
+}
+
+body {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      border: none;
+      outline: none;
+      vertical-align: baseline;
+      font-size: 100%;
+	  background-image: url('Images/aboutbackg.jpg');	  
+	  background-size: cover;
+}
+/* navbar */
+
+nav {
+      height: 40px;
+      line-height: 40px;
+}
+
+nav a img {
+      vertical-align: middle;
+      width: 40px;
+      height: 40px;
+}
+
+nav a:nth-child(2) {
+      float: right;
+}
+html {
+      font-family: Poppins;
+}
+
+
+
+h1 {
+      color: #fff;
+      font-size: 55px;
+	  margin: 0% 0% 0% 40%;
+	  font-weight: 150;
+}
+
+p {
+      color: #fff;
+      font-size: 21px;
+      font-weight: 150;
+	  margin: 0% 0% 0% 10%;
+}
+
+h2 {
+      color: #fff;
+      font-size: 38px;
+	  margin: 0% 0% 0% 43%;
+	  font-weight: 150;
+	  font-family: bold;
+}
+ div h3 {
+      color: #fff;
+      font-size: 38px;
+      font-weight: 100;
+	  margin: 0% 0% 0% 41%;
+	  font-style: italic;
+	  
+}
+
+div p {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 150;
+	  margin: 0% 0% 0% 10%;
+	  font-style: italic;
+}
+
+.title h4
+{
+    font-size:28px;
+	font-weight: 350;
+	font-style: italic;
+	color: white;
+	margin: 0% 0% 0% 10%;
+}

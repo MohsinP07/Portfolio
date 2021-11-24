@@ -1,0 +1,75 @@
+<html>
+
+    
+    <head>
+        <title>Register</title>
+		<link rel= "stylesheet" href="register.css" type="text/css">
+		<form action="forms.php" method="post">
+    </head>
+    
+    
+
+    <body>
+    
+        <div class="form-wrap">
+        
+          
+            
+                <h1>Register</h1>
+				<legend>User Id</legend>
+				<input type="int" placeholder="Userid" name="id" onkeyup = "show(this.value)" pattern="[A-Za-z]{4,10}" required>
+				<br><span id='id1'></span>
+				<legend>Name</legend>
+                <input type="text" placeholder="Name" name="name" pattern="[A-Za-z]{4,10}" required>
+				<legend>Email</legend>
+				<input type='email' placeholder="Email Address" name="email" required>
+				<legend>Hobbies</legend>
+                <input type="text" placeholder="Hobbies" name="hobbies" required>
+				<legend>Phone</legend>
+                <input type="text" placeholder="Phone" name="phone" pattern="[0-9]{10}" required>
+				<legend>Password</legend>
+				<input type="password" placeholder="Password" name="password" pattern=".{5,}" required>		
+				 	<input type="submit" value="REGISTER" name="submit1"/>
+					<p>Already have an account? <a href="loginform.html">Login</a></p>
+            </form>
+        
+        </div>
+   
+    
+<script>
+
+//checking uname available or not by using ajax.
+
+function show(s)
+{
+x = new XMLHttpRequest()
+x.open("GET","getuname.php?s="+s,true)
+x.send()
+x.onreadystatechange = function()
+	{
+		if(x.readyState==4 && x.status==200)
+		document.getElementById("id1").innerHTML=x.responseText
+	}
+}
+
+
+//signup validation js for same passwd
+/*function validate()
+{
+	pwd1 = document.forms["sup"]["pwd1"]
+	pwd2 = document.forms["sup"]["pwd2"]
+
+	if(!(pwd1.value === pwd2.value))
+	{
+		alert ("Enter same Password in both boxes.")
+		pwd2.focus()
+		return false
+	}
+	return confirm("Are you sure to proceed ?")
+}*/
+</script>
+
+    </body>
+
+
+</html>
